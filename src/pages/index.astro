@@ -1,0 +1,15 @@
+---
+import App from "../components/App.svelte";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="ChatPDF">
+	<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+	<main class="grid place-content-center min-h-screen w-screen">
+		<h1 class="text-white text-6xl font-bold opacity-95 text-center pb-10">Chat with your pdf</h1>
+		<section class="container w-[1000px] max-w-xl h-64">
+			<App client:idle></App>
+		</section>
+	</main>
+</Layout>
