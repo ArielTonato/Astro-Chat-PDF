@@ -1,0 +1,546 @@
+I.
+II.
+(66)
+VERSIDAD
+AMBA
+PORTADA
+Título:
+Carrera:
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi)/ Casilla 334/ Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+Módulo y Docente:
+Nivel y Paralelo:
+Alumnos participantes:
+PROYECTO DE MITAD DE SEMESTRE
+UNIVERSIDAD TÉCNICA DE AMBATO
+Facultad de Ingeniería en Sistemas, Electrónica e Industrial
+"Proyecto Académico de Mitad de Semestre: abril -septiembre 2022"
+Sistema de control de versiones: AzureDevOps
+Software
+4 "A"
+Carlos Alvarado
+Gabriel Medina
+INFORME DEL PROYECTO
+2.1 Título
+Ariel Tonato
+Mateo Díaz
+Manejo y configuración de software / Ing. Santiago Jara
+TECNICA DE
+NIVERSIDAD
+DE AMBATO
+RETRO
+Sistema de control de versiones AzureDevOps con Git
+2.2 Objetivos
+1.- Comprender los conceptos básicos de AzureDevOps como lo son la creación y administración de
+repositorios, commits y las ramas.
+2.- Desarrollar habilidades prácticas en el uso de AzureDevOps para el control de versiones, incluyendo
+la resolución de conflictos, la gestión de ramas y la recuperación de versiones anteriores.
+3.- Entender la importancia del control de versiones en el desarrollo de software y cómo AzureDevOps
+puede ayudar a los equipos a colaborar de manera más efectiva y garantizar la calidad del código.
+2.3 Resumen
+Azure DevOps es un conjunto de herramientas y servicios en la nube, proporcionados por
+Microsoft, que ayudan a los equipos de desarrollo a planificar, colaborar, construir, testear y
+desplegar aplicaciones de manera más eficiente y rápida. Incluye herramientas como Azure
+Boards, Azure Repos, Azure Test Plans, Azure Artifacts y Azure Pipelines, y permite a los
+equipos de desarrollo trabajar juntos en un entorno integrado y automatizado para acelerar
+la entrega de software de alta calidad. Azure DevOps es una solución en la nube, lo que
+ofrece una alta disponibilidad y escalabilidad, permitiendo a los equipos trabajar de manera
+más eficiente y efectiva sin tener que preocuparse por la infraestructura subyacente.
+2.4 Palabras clave:
+Azure DevOps, Herramientas de colaboración, Entrega de software, Microsoft,
+Infraestructura en la nube.
+2.5 Introducción
+La historia de Azure DevOps se remonta a los inicios de Microsoft Visual Studio Team
+System (VSTS) en 2005, una suite de herramientas para el ciclo de vida de desarrollo de
+software que incluía funciones para planificación, gestión de código fuente, construcción,
+pruebas y seguimiento de errores.
+En 2018, Microsoft anunció el rebranding de VSTS a Azure DevOps con el objetivo de ofrecer
+una solución integral para el ciclo de vida de desarrollo de software, que se integra con otros
+VERSIDAD
+(50)
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi)/ Casilla 334 / Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+TECNICA DE
+NIVERSIDAD
+DEN
+DE AMBATO
+servicios en la nube de Microsoft, como Azure, GitHub y Teams. Este rebranding también
+incluyó la adición de nuevas funciones y servicios en Azure DevOps, como la integración
+con Kubernetes y la extensibilidad para los clientes de terceros.
+Desde entonces, Azure DevOps se ha convertido en una herramienta popular entre los
+equipos de desarrollo de software, ya que ofrece una solución integral y flexible para la
+gestión del ciclo de vida de desarrollo de software, en un entorno integrado y en la nube, lo
+que permite a los equipos trabajar de manera más eficiente y colaborativa.
+Azure DevOps es un conjunto de herramientas y servicios en la nube, proporcionados por
+Microsoft, que ayudan a los equipos de desarrollo a planificar, colaborar, construir, testear y
+desplegar aplicaciones de manera más eficiente y rápida. Con Azure DevOps, los equipos
+de desarrollo pueden trabajar juntos en un entorno integrado y automatizado, lo que les
+permite acelerar la entrega de software de alta calidad.
+Azure DevOps incluye varias herramientas para el ciclo de vida de desarrollo de software,
+como Azure Boards para la planificación y seguimiento de proyectos ágiles, Azure Repos
+para la gestión de repositorios de código fuente, Azure Test Plans para la planificación y
+ejecución de pruebas automatizadas y manuales, Azure Artifacts para la gestión de paquetes
+de artefactos y dependencias, y Azure Pipelines para la integración y entrega continua
+(CI/CD) de aplicaciones.
+Con Azure DevOps, los equipos pueden colaborar en tiempo real, realizar seguimiento del
+progreso del proyecto, automatizar procesos de entrega de software y mejorar la calidad de
+sus aplicaciones. Además, al ser una solución en la nube, Azure DevOps ofrece una alta
+disponibilidad y escalabilidad, lo que permite a los equipos de desarrollo trabajar de manera
+más eficiente y efectiva sin tener que preocuparse por la infraestructura subyacente.
+2.6 Materiales y Metodología
+Materiales:
+1.- Computadora o dispositivo con acceso a Internet.
+2.- Cuenta de Azure DevOps o acceso a una cuenta existente.
+3.- Proyecto en Azure DevOps creado o acceso a un proyecto existente.
+4.- Repositorio de código fuente (por ejemplo, Git) configurado en Azure DevOps.
+Metodología:
+Definir los requisitos del proyecto: Antes de comenzar a utilizar Azure DevOps como sistema de
+control de versiones, es importante definir los requisitos del proyecto, como el tipo de proyecto,
+el tamaño del equipo, las ramas del repositorio.
+Crear un proyecto en Azure DevOps: Inicia sesión en Azure DevOps y crea un nuevo proyecto
+o accede a un proyecto existente donde se almacenará el código fuente y se realizará el control
+de versiones.
+Configurar el repositorio de código fuente: Selecciona el tipo de repositorio de código fuente que
+deseas utilizar, como Git, y configúralo en el proyecto de Azure DevOps. Puedes crear ramas
+principales, como la rama "master" o "main", y ramas secundarias para el desarrollo de
+funciones o correcciones de errores.
+Clonar el repositorio: Clona el repositorio en tu computadora local utilizando herramientas de
+control de versiones, como Git, para que puedas realizar cambios en los archivos de código
+fuente.
+VERSIDAD
+(OB)
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi) / Casilla 334/ Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+TECNICA DE
+NIVERSIDAD
+DE
+Realizar cambios y commits: Realiza los cambios necesarios en los archivos de código fuente
+en tu computadora local y luego realiza commits para guardar los cambios en tu repositorio local.
+Utiliza mensajes de commit descriptivos para facilitar el seguimiento de los cambios realizados.
+●
+Sincronizar con el repositorio remoto: Sincroniza tus cambios locales con el repositorio remoto
+en Azure DevOps. Puedes utilizar comandos de Git, como "push" o herramientas de control de
+versiones integradas en tu entorno de desarrollo.
+●
+DE AMBATO
+Gestionar ramas y fusiones: Si estás trabajando en una rama secundaria, puedes fusionar tus
+cambios con la rama principal cuando hayas completado tu tarea. Utiliza herramientas de fusión
+disponibles en Azure DevOps para gestionar y resolver conflictos si es necesario.
+●
+Controlar versiones y despliegues: Utiliza las funcionalidades de control de versiones de Azure
+DevOps para etiquetar versiones específicas, realizar seguimiento de cambios y controlar el
+despliegue de versiones en entornos de desarrollo, pruebas y producción.
+Colaboración en equipo: Si trabajas en un equipo, puedes utilizar características de Azure
+DevOps como solicitudes de extracción (pull requests), revisión de código y asignación de tareas
+para colaborar y coordinar con otros miembros del equipo.
+Monitoreo y auditoría: Utiliza las herramientas y funcionalidades de seguimiento y auditoría de
+Azure DevOps para supervisar los cambios realizados en el código fuente, controlar el historial
+de versiones y realizar un seguimiento de quién hizo qué cambios.
+Marco Teórico:
+El sistema de control de versiones es una herramienta fundamental en el desarrollo de software
+que permite gestionar y controlar los cambios realizados en el código fuente y otros artefactos
+durante el ciclo de vida de desarrollo de un proyecto. Azure DevOps es una plataforma de
+desarrollo colaborativa de Microsoft que proporciona una solución integral para la gestión de
+proyectos y el control de versiones. A continuación, se presenta el marco teórico relacionado
+con el sistema de control de versiones Azure DevOps:
+Control de versiones y gestión del código fuente: El control de versiones es un sistema
+que permite rastrear, registrar y controlar los cambios realizados en el código fuente de
+un proyecto. En este marco teórico, se pueden presentar diferentes métodos de control
+de versiones, como el control centralizado (como Subversion) y el control distribuido
+(como Git), y explicar cómo Azure DevOps utiliza Git como su sistema de control de
+versiones predeterminado.
+Ramas y flujo de trabajo: Las ramas en el sistema de control de versiones permiten
+organizar y gestionar las diferentes líneas de desarrollo de un proyecto. Pueden
+explicarse conceptos como la rama "master" o "main" como la rama principal y otras
+ramas secundarias utilizadas para el desarrollo de nuevas características, corrección de
+errores o pruebas. Además, se pueden presentar diferentes estrategias de flujo de
+trabajo, como GitFlow, y cómo Azure DevOps proporciona herramientas para gestionar
+estas ramas y facilitar la colaboración en equipo.
+Integración y entrega continuas (CI/CD): Azure DevOps no solo se limita al control de
+versiones, sino que también proporciona capacidades de integración continua y entrega
+continua (CI/CD). En este marco teórico, se pueden describir los conceptos y beneficios
+de la integración continua, donde los cambios se integran y se prueban
+automáticamente, y la entrega continua, donde las versiones del software se despliegan
+automáticamente en entornos de desarrollo, pruebas y producción.
+Automatización y pruebas: Azure DevOps también ofrece herramientas para la
+automatización de tareas y pruebas en el proceso de desarrollo de software. Esto puede
+VERSIDAD
+●
+●
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi)/ Casilla 334/ Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+incluir la automatización de compilación, pruebas unitarias, pruebas de integración y
+despliegue automatizado, utilizando características como los pipelines de Azure
+DevOps.
+Gestión de versiones y seguimiento de cambios: Azure DevOps permite llevar un registro
+de las versiones específicas del código fuente y otros artefactos del proyecto. Esto facilita
+la identificación y recuperación de versiones anteriores en caso de problemas o la
+necesidad de volver a una versión anterior. También se pueden mencionar
+características de seguimiento de cambios, como la capacidad de ver quién realizó qué
+cambios y cuándo.
+Colaboración en equipo: Azure DevOps fomenta la colaboración y la gestión del
+desarrollo de software en equipo. Puede presentarse la capacidad de asignar tareas,
+realizar revisiones de código, comentar y colaborar directamente en los archivos de
+código fuente, y cómo estas características mejoran la eficiencia y la comunicación entre
+los miembros del equipo.
+Integración con otras herramientas y servicios: Azure DevOps se integra con una amplia
+gama de herramientas y servicios de desarrollo y gestión de proyectos. Puede
+mencionarse la integración con herramientas
+UTAFISEI
+TECNICA DE
+Ad
+NIVERSIDAD
+2.7 Resultados y Discusión
+Para el presente apartado, se expondrá una página web realizada con html, css, js y php. En el
+desarrollo de la página web se utilizó a Git como sistema de control de versiones, Visual Studio
+Code como editor de texto para realizar los cambios en el proyecto y a Azure Devops como
+repositorio remoto.
+Direccion
+Calle Rocafuerte entre Quito y
+Mariano Castillo
+Se procederá a presentar los resultados de la página web y posteriormente se presentará toda
+la estructura y evidencias del sistema de control de versiones y los comandos que fueron
+utilizados para la gestión de cambios en el desarrollo de la página web.
+PÁGINA WEB
+Inicio Sobre nosotros Cursos
+DE AMBATO
+Contacto
+educacionvirtual@uta.edu.ec
+Ilustración 1 Header Página Web
+Llamanos
+(03) 282-4804 (099) 8918-159
+(66)
+VERSIDAD
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+UTA
+Wit (int
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+>
+ConsoleToCa
+>
+>
+components
+context
+documentation
+>graphol
+>node modules library root
+-pages
+> admin
+>api
+main/9 A
+app.1sx
+SOFTWAREment.tx
+11
+Sort useEffect from react"; 8.23 8 (gris: 3.33 )
+inport Head 'next/head
+●gitignore
+next-env.d.ts
+12 package jon
+README.md
+import type Apuross true 'next/app': 5:31 (grip: 2.34 )
+inport (ApolloProvider from apollo/client': 120.47 Toria: 31/1448)
+import TheseProvider) tron gesteriat-us/core/styles"; 7.5 8 (gria: 1.15)
+inport CasBaseline from material-ui/core/CssBaseline': 61.61 kB (grip: 20.02 )
+Leport Container) from material-ui/core'; 63.32 kB (grip: 20.38 kB)
+Import useApollo from../graphql/client":
+App Component, pageProps: Austrass) (
+Impulsa tu futuro en
+useEffect (afect () > {
+la ERA DIGITAL!
+inport LightThese, darkThese tros../utils/theme":
+import useLocalStorage from ../hooks/useLocalStorage:
+inport Navbar from ../components/Navlar:
+Ilustración 2 Carrusel - Imagen 1
+), dps (1);
+(tp):):fclose(fp):)
+ClearConsoleta
+return (
+(5.8); printf("Enter
+(ClearConsoleToColors(15, 1):
+int choice;char ch 'a':he(1)(system("cls"); scanf("
+ClearColor(); gotoxy(5,15)::getch(); fclose(fp):):(
+Únete a nuestra gran
+comunidad
+universitaria.
+Ilustración 3 Carrusel - Imagen 2
+tp:int 1-0, isFound 0:system("cls");
+fopen("note.dat","rb"); (fp= NULL) (print("Error in
+[^\n]",R.note); while(fread(&R, size(8),1,fp) 1X
+Found 8)[gotoxy(10,5); printf("This Month contains ne
+18,7+1); printf("Press any key to back"):getch():)scant
+i)(ClearConsoleToColors(15, 1);
+Set ConsoleTitle("Programming Code Abstract Screen");
+int choice; char ch 'a':while(1)(system("cls"); scanf("
+system("cls"); int 18, isfound 8;systen("cls"); whil
+(choice){if(fwrite(&R,size(R),1,fp))(gotory(
+SetCLO MEJOR ESTÁ POR VENIR ClearColor():)
+;fclose(fp):)
+printf("Hore");
+18. 1sFound-system("cls");
+Sé gran
+parte
+cambio.
+Atp:int 1-0, isFound 0;system("cls");
+fopen("note.dat", "rb");(tp NULL) (print("Error in S
+(choice){(furite(&R,
+faFail to
+ent.querySelector(selector #ss-server-side');
+CAMPUS ACADEMICO
+useLocalStorage these-value,
+ment.removeChild(jssStyles);
+Ilustración 4 Carrusel - Imagen 3
+VERSIDAD
+DE
+TECNICA
+2
+Ad
+DE AMBATO
+VERSIDAD
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+FACULTAD DE INGENIERIA EN SISTEMAS, ELECTRONICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+A DE INGENIERÍA EN ELECTRÓNICA Y
+4.5 (30)
+✰✰
+F.I.S.E.
+ABIERTO
+Introducción a la Analítica de
+Datos
+4.4 (25)
+32 HORAS
+ABIERTO
+Nociones básicas:
+NETWORKING ESSENTIALS
+$60
+Ⓒ70 HORAS
+$50
+Y COMUNICACIO
+SOBRE NOSOTROS CARRERA DE SOFTWARE
+ABIERTO
+MISIÓN
+La Carrera de Software de la Facultad de Ingeniería en Sistemas Electrónica e
+industrial de la Universidad Técnica de Ambato por sus niveles de excelencia
+se constituirá como un centro de formación superior con liderazgo y
+proyección nacional a internacional.
+VISIÓN
+Formar profesionales lideres competentes con visión humanista y
+pensamiento crítico a través de la Docencia, la Investigación y la Vinculación,
+que apliquen, promuevan y difundan el conocimiento respondiendo a las
+necesidades del país.
+Ilustración 5 Main - About Us
+ABIERTO
+Cursos Disponibles
+Ver más
+Ⓒ32 HORAS
+Implementación de buenas
+prácticas (BPM) en la
+Industria
+4.5 (20)
+CURSOS
+4.6 (10)
+64
+TOT
+O
+$60
+32 HORAS
+Introducción a Internet de las
+Cosas loT
+$30
+Ilustración 6 Main - Cursos FISEI
+Ⓒ40 HORAS
+Desarrollo web con Python y
+Django
+ABIERTO
+★ 4.7 (40)
+ABIERTO
+Introducción a la
+Ciberseguridad
+4.6 (40)
+$60
+32 HORAS
+$30
+TECNICA DE
+Ad
+VERSIDAD
+DE AMBATO
+RETRO
+(66)
+VERSIDAD
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi)/ Casilla 334 / Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+FISEI
+AUTORIDADES FISEI- SOFTWARE
+Ing. Clay Aldás
+COORDINADOR CARRERA
+SOFTWARE
+Ing. Pilar Urrutia
+DECANA FIE
+Ing. Carlos Sánchez
+SUBDECANO FISE
+Ilustración 7 Main - Autoridades FISEI
+RESEÑAS
+OPINIONES
+66
+Estudiar Software y ser parte de esta gran comunidad
+universitaria es una gran experiencia.
+Mateo Díaz
+Estudiante - Carrera Software
+Ilustración 8 Main - Opiniones
+TECNICA DE
+NIVERSIDAD
+DE AMBATO
+RETRO
+VERSIDAD
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CONTACTO
+Commit
+Av. Los Chasquis y Rio
+Guayllabamba
+(032) 851894-411537
+ap.sanchez@uta.edu.ec
+in
+© Copyright © Universidad Técnica de Ambato
+Se actualizo el topbar y el r
+Merged PR 3: Se actualizo el topbar y el navbar
+Carlos Alvarado Today at 10:05
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894 - 2411537
+AMBATO-ECUADOR
+Merged PR 4: Se enviaron los cambios finales a la rama main desde la rama develop.
+38cc2Mateo Diaz Today at 10:14
+navar
+a los Actualmente utilizados
+CarlosA21 Today at 10:03
+> Introducción a la Analítica de Datos
+> Implementación de Buenas
+Prácticas
+> Desarrollo Web con Phyton y Django
+> Networking Essentials
+> Internet de las Cosas IOT
+> Introducción a la Ciberseguridad
+Se agregó una imagen para las opiniones y se modifico la parte main del index.html en el apartado de las opiniones.
+baMatt Today at 00:34
+Se modificó la parte del carrusel del archivo index.html y se agregaron algunas imágenes al directorio/img
+72661424Matt Today at 00:23
+se realizaron cortas modificaciones a la seccion del footer del archivo.html
+beb4Matt Today at 00:09
+Se modificó el archivo about.html y su contenido
+mefasz Mam Today at 00:07
+Ilustración 9 Fotter Página Web
+En el apartado de gestión de cambios, el desarrollo se basó en el flujo de trabajo de Git. A partir
+de la rama main fue creada una rama develop, y a partir de la rama develop fueron creadas dos
+ramas (1 para cada desarrollador).
+En total se realizó 23 commits en ramas en general y se abrieron 4 Pull Request, de los cuales
+3 fueron revisados y aprobados y solamente 1 fue rechazado.
+Se modificó el enlace para el archivo index.html que lleva al archivo about.html
+Matt Today at 00:00
+Se modificó las secciones ABOUT US y Autoridades Fisei del archivo index.html y se reemplazaron imágenes
+Matt Yesterday at 23:56
+Se modificó la estructura de la página, se agregó librerias de css scss, asi como javascript y más recursos visuales.
+Matt Yesterday at 23:31
+Merge branch 'main' of https://dev.azure.com/mdia22644/Proyecto%201%20de%20pr%C3%A1ctica/_git/Proyecto%201%20de%20pr%C3%A1ctica
+404 Matt Yesterday at 23:27
+Merged PR 1: Pull request para realizar commit en la rama main desde la rama develop con los cambios actualizados
+40
+Mateo Diac Yesterday at 00:04
+Se cargó la carpeta con imágenes para el index.html y también se modificó toda la estructura del archivo index.html
+asseMatt Yesterday at 23:24
+Se creo el archivo contacto.html y se agrego las etiquetas numero de telefono y correo
+756775 Matt mar 23:57
+Se agrego una etiqueta en el index.html desde la rama develop
+34feses Matmat 2352
+INFORMACIÓN
+Ingresa tu correo personal para obtener mayor
+información a cerca de los cursos del CTT.
+se creo el primer archivo en el repositorio con estructura html junto con una etiqueta
+477 Matt ma 23:50
+Your Email Address
+Sign Up
+Privacy Terms FAQS Help
+Ilustración 10 Flujo de trabajo con gestión de cambios en el proyecto de la página web.
+Pull Request
+83 4
+87 4
+224
+32 4
+224
+î
+22 4
+1
+VERSIDAD
+E
+TECNICA
+Ad
+Status
+DE AMBATO
+(OB)
+VERSIDAD
+AMBA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE Elija un elemento
+Cdla. Universitaria (Predios Huachi)/ Casilla 334 / Telefax: 03-2851894-2411537
+AMBATO-ECUADOR
+2.8 Conclusiones
+TECNICA
+NIVERSIDAD
+DE AMBATO
+Comprender los conceptos básicos de Azure DevOps es fundamental para utilizar de manera
+efectiva esta plataforma en el control de versiones. Mediante el conocimiento de cómo crear y
+administrar repositorios, realizar commits y gestionar ramas, se establece una base sólida para
+el control de versiones en Azure DevOps. Esto permite a los desarrolladores y equipos de
+proyecto utilizar las funcionalidades principales de la herramienta y aprovechar al máximo sus
+capacidades.
+Desarrollar habilidades prácticas en el uso de Azure DevOps para el control de versiones implica
+adquirir destrezas en la resolución de conflictos, la gestión de ramas y la recuperación de
+versiones anteriores. Estas habilidades son esenciales para mantener la integridad y la
+consistencia del código fuente en un proyecto. Con Azure DevOps, los equipos pueden
+colaborar de manera efectiva, asegurando que todos los cambios realizados sean
+adecuadamente registrados, revisados y fusionados, lo que contribuye a la eficiencia y la calidad
+del desarrollo de software.
+El control de versiones desempeña un papel crítico en el desarrollo de software, ya que permite
+a los equipos gestionar y controlar los cambios realizados en el código fuente a lo largo del
+tiempo. La comprensión de la importancia de este control y cómo Azure DevOps puede
+respaldar este proceso es esencial para garantizar la calidad del código y facilitar la colaboración
+efectiva entre los miembros del equipo. Azure DevOps proporciona herramientas y
+funcionalidades que permiten a los desarrolladores trabajar de manera coordinada, monitorear
+el historial de versiones y recuperar versiones anteriores cuando sea necesario, mejorando así
+la eficiencia y la fiabilidad del desarrollo de software.
+2.9 Referencias bibliográficas
+Microsoft. (n.d.). Azure DevOps documentation. Recuperado de https://docs.microsoft.com/en-
+us/azure/devops/
+Chacon, S., & Straub, B. (2014). Pro Git. Apress. Recuperado de https://git-scm.com/book/en/v2
+Microsoft. (n.d.). Azure DevOps learning path. Recuperado de https://docs.microsoft.com/en-
+us/learn/paths/azure-devops/
+Gruver, M., & Ostrander, M. (2016). Continuous Delivery and DevOps: A Quickstart Guide. O'Reilly Media.
+Tarullo, C., & Gorton, I. (2016). Implementing a Software Configuration Management System: For Git and
+Azure DevOps Repositories. Apress.

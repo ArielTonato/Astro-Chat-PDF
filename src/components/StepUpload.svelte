@@ -15,24 +15,28 @@
 
     async function handleFilesSelect(e) {
         const { acceptedFiles, fileRejections } = e.detail;
+
         files.accepted = [...files.accepted, ...acceptedFiles];
         files.rejected = [...files.rejected, ...fileRejections];
         if (acceptedFiles.length > 0) {
             setAppStatusLoading();
+            
             const formData = new FormData();
             formData.append("file", acceptedFiles[0]);
+
             const response = await fetch("/api/upload", {
                 method: "POST",
                 body: formData,
             });
+
+            
             if (!response.ok) {
                 setAppStatusError();
                 return;
             }
 
-            const result = await response.json();
-            console.log(result);
-            setAppStatusChatMode(result);
+            const {id, url, pages} = await response.json();
+            setAppStatusChatMode({id, url, pages});
         }
     }
 </script>
