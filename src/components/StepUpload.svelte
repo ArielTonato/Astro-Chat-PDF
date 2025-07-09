@@ -18,25 +18,35 @@
 
         files.accepted = [...files.accepted, ...acceptedFiles];
         files.rejected = [...files.rejected, ...fileRejections];
+        
         if (acceptedFiles.length > 0) {
             setAppStatusLoading();
             
-            const formData = new FormData();
-            formData.append("file", acceptedFiles[0]);
+            try {
+                const formData = new FormData();
+                formData.append("file", acceptedFiles[0]);
 
-            const response = await fetch("/api/upload", {
-                method: "POST",
-                body: formData,
-            });
+                console.log('Uploading file:', acceptedFiles[0].name);
+                const response = await fetch("/api/upload", {
+                    method: "POST",
+                    body: formData,
+                });
 
-            
-            if (!response.ok) {
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('Upload error:', errorData.error);
+                    setAppStatusError();
+                    return;
+                }
+
+                const {id, url, pages} = await response.json();
+                console.log('Upload successful:', {id, url, pages});
+                setAppStatusChatMode({id, url, pages});
+                
+            } catch (error) {
+                console.error('Error during upload:', error);
                 setAppStatusError();
-                return;
             }
-
-            const {id, url, pages} = await response.json();
-            setAppStatusChatMode({id, url, pages});
         }
     }
 </script>

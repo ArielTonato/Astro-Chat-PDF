@@ -5,12 +5,21 @@ import path from "path"
 import { v2 as cloudinary, type UploadApiResponse } from 'cloudinary';
 
 cloudinary.config({
-  cloud_name: 'aridev21',
-  api_key: '827353881855768',
-  api_secret: 'uuBHm1UrXLwjSN_MDE1JjqrBml8'
+  cloud_name: import.meta.env.CLOUDINARY_CLOUD_NAME || 'aridev21',
+  api_key: import.meta.env.CLOUDINARY_API_KEY || '742142531115995',
+  api_secret: import.meta.env.CLOUDINARY_API_SECRET || 'PecFIWp7rydwvkUQoYpsFe2x0Yg'
 });
 
 const outputDir = path.join(process.cwd(), "public/text");
+
+// Asegurar que el directorio existe
+const ensureDirectoryExists = async (dirPath: string) => {
+  try {
+    await fs.access(dirPath);
+  } catch {
+    await fs.mkdir(dirPath, { recursive: true });
+  }
+};
 const uploadStream = async (buffer: Uint8Array, options: {
   folder: string,
   ocr?: string
@@ -26,39 +35,90 @@ const uploadStream = async (buffer: Uint8Array, options: {
 }
 
 export const POST: APIRoute = async ({ request }) => {
-  const formData = await request.formData();
-  const file = formData.get("file") as File;
+  try {
+    const formData = await request.formData();
+    const file = formData.get("file") as File;
 
-  if (!file) {
-    return new Response("No file found", { status: 400 });
+    if (!file) {
+      return new Response(JSON.stringify({ error: "No file found" }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    // Validar que sea un PDF
+    if (!file.type.includes('pdf')) {
+      return new Response(JSON.stringify({ error: "Only PDF files are allowed" }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    const buffer = await file.arrayBuffer();
+    const uint8Array = new Uint8Array(buffer);
+    
+    console.log('Uploading to Cloudinary...');
+    const result = await uploadStream(uint8Array, {
+      folder: "pdf",
+      ocr: "adv_ocr"
+    });
+
+    console.log('Cloudinary upload completed:', result.asset_id);
+
+    const {
+      asset_id: id,
+      secure_url: url,
+      pages,
+      info
+    } = result;
+
+    // Verificar que se extrajo texto
+    const data = info?.ocr?.adv_ocr?.data;
+    
+    if (!data || data.length === 0) {
+      return new Response(JSON.stringify({ 
+        error: "No text could be extracted from the PDF" 
+      }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    const text = data.map((blocks: { textAnnotations: { description: string }[] }) => {
+      const annotations = blocks['textAnnotations'] ?? {};
+      const first = annotations[0] ?? {};
+      const content = first['description'] ?? '';
+      return content.trim();
+    }).filter(Boolean).join('\n');
+
+    if (!text.trim()) {
+      return new Response(JSON.stringify({ 
+        error: "No readable text found in the PDF" 
+      }), { 
+        status: 400,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    console.log('Saving text file...');
+    await ensureDirectoryExists(outputDir);
+    await fs.writeFile(`${outputDir}/${id}.txt`, text, 'utf-8');
+    
+    console.log('Upload process completed successfully');
+    return new Response(JSON.stringify({
+      id, url, pages
+    }), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+  } catch (error) {
+    console.error('Error in upload endpoint:', error);
+    
+    return new Response(JSON.stringify({ 
+      error: "Error processing the file. Please try again." 
+    }), { 
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
-
-  const buffer = await file.arrayBuffer();
-  const uint8Array = new Uint8Array(buffer);
-  const result = await uploadStream(uint8Array, {
-    folder: "pdf",
-    ocr: "adv_ocr"
-  });
-
-  const {
-    asset_id: id,
-    secure_url: url,
-    pages,
-    info
-  } = result;
-
-  const data = info?.ocr?.adv_ocr?.data;
-
-  const text = data.map((blocks: { textAnnotations: { description: string }[] }) => {
-    const annotations = blocks['textAnnotations'] ?? {};
-    const first = annotations[0] ?? {};
-    const content = first['description'] ?? '';
-    return content.trim();
-  }).filter(Boolean).join('\n');
-
-   await fs.writeFile(`${outputDir}/${id}.txt`, text, 'utf-8');
-  
-  return new Response(JSON.stringify({
-    id, url, pages
-  }))
 }

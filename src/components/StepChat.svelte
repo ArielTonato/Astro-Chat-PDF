@@ -36,15 +36,17 @@
             });
 
             if (!res.ok) {
-                loading = false;
-                console.error("Error al enviar la pregunta");
+                const errorData = await res.json();
+                console.error("Error al enviar la pregunta:", errorData.error);
+                answer = `Error: ${errorData.error || 'Error desconocido'}`;
                 return;
             }
 
             const { answer: apiAnswer } = await res.json();
             answer = apiAnswer;
         } catch (e) {
-            setAppStatusError();
+            console.error("Error en la petición:", e);
+            answer = "Error de conexión. Intenta de nuevo.";
         } finally {
             loading = false;
         }
