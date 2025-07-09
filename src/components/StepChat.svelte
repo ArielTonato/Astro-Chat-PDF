@@ -1,6 +1,6 @@
 <script>
     import { Label, Spinner } from "flowbite-svelte";
-    import { appStatusInfo, setAppStatusError } from "../store";
+    import { appStatusInfo, setAppStatusError, appStatus, APP_STATUS } from "../store";
     const { url, pages, id } = $appStatusInfo;
 
     let loading = false;
@@ -51,9 +51,22 @@
             loading = false;
         }
     };
+
+    function handleCancel() {
+        appStatus.set(APP_STATUS.INIT);
+    }
 </script>
 
 <div class="space-y-8">
+    <div class="flex justify-end">
+        <button
+            type="button"
+            on:click={handleCancel}
+            class="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors shadow"
+        >
+            Cancelar y subir otro PDF
+        </button>
+    </div>
     <!-- PDF Preview -->
     <div class="bg-gray-900/30 backdrop-blur-sm rounded-lg p-6">
         <h3 class="text-lg font-medium text-white mb-4">
