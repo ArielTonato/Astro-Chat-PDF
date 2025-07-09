@@ -38,14 +38,15 @@ const { title } = Astro.props;
 		background-size: 224px;
 		color: white;
 		height: 100%;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
-	
 	body {
 		margin: 0;
 		padding: 0;
-		height: 100vh;
-		overflow: hidden;
+		min-height: 100vh;
+		height: auto;
+		overflow-x: hidden;
+		overflow-y: scroll;
 		font-family: 'Inter', system-ui, -apple-system, sans-serif;
 	}
 	

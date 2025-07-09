@@ -1,0 +1,392 @@
+NIVERSIDAD
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi)/Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+AUDITORÍA FÍSICA
+AUDITORÍA DE SISTEMAS DE INFORMACIÓN
+KEVIN GANÁN, JOHN PEÑA, WILLIAM PÉREZ, FERNANDO SÁNCHEZ, ARIEL TONATO
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN
+SISTEMAS ELECTRÓNICA E INDUSTRIAL
+UNIVERSIDA
+1
+TECNICA
+1.
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi)/Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+INTRODUCCIÓN
+2.
+ENTIDAD AUDITADA.
+3.
+PROCESO AUDITORIA
+3.1
+3.2
+TABLA DE CONTENIDO
+REVISIÓN DE INVENTARIO DE EQUIPOS
+MANTENIMIENTO PREVENTIVO.
+3.3
+TABLA DE RESULTADOS.
+4.
+AUDITOR LIDER
+5.
+EQUIPO DE AUDITORIA
+6.
+METODOLOGÍA DE AUDITORIA DE DESARROLLO.
+7.
+METODOLOGÍA.
+8.
+ALCANCE
+9.
+FIRMAS DE RESPONSABILIDAD.
+2
+3
+3
+3
+3
+4
+5
+9
+9
+9
+10
+10
+11
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+UNIVERSIDAD TECNICA DE
+1.
+INTRODUCCIÓN
+Este informe detalla los resultados obtenidos en la auditoría física realizada en el área de
+Tecnologías de la Información de KREA SF STUDIO, ubicada en Pelileo, Tungurahua. El
+objetivo principal fue evaluar el estado de la infraestructura tecnológica, la gestión de equipos,
+y las prácticas de mantenimiento utilizadas en la organización. Mediante inspecciones físicas,
+revisión de documentación y entrevistas al personal, se identificaron fortalezas y áreas de
+mejora para optimizar el rendimiento de los recursos tecnológicos y asegurar su alineación con
+las necesidades operativas del estudio.
+2.
+ENTIDAD AUDITADA
+KREA SF STUDIO es un estudio de arquitectura fundado en 2018 en la ciudad de Pelileo. Su
+equipo multidisciplinario incluye arquitectos e ingenieros especializados en diseño estructural,
+topografía y remodelaciones. La empresa se ha consolidado como referente regional gracias a
+su compromiso con la calidad, el uso de tecnologías como CAD y modelado 3D, y su enfoque
+personalizado hacia cada cliente. Cuenta con un departamento de TI que respalda los procesos
+digitales necesarios para el diseño y ejecución de proyectos de arquitectura.
+3.
+PROCESO AUDITORIA
+La auditoría se ejecutó con base en un enfoque técnico y metodológico que incluyó revisión
+documental, inspecciones presenciales y entrevistas con el personal del área de Tecnologías de
+la Información. El proceso se centró en identificar el estado del inventario de equipos
+tecnológicos y la aplicación de mantenimiento preventivo, evaluando si se cumplen buenas
+prácticas y normativas vigentes. A continuación, se detallan los principales componentes del
+proceso:
+3.1 REVISIÓN DE INVENTARIO DE EQUIPOS
+Objetivo: Verificar la existencia y estado de los equipos tecnológicos utilizados en KREA SF
+STUDIO, tales como estaciones de trabajo, servidores, dispositivos de red y periféricos.
+Procedimiento:
+• Se solicitó el inventario actualizado de hardware.
+•
+Se realizó una inspección física para constatar la existencia y estado de los equipos
+registrados.
+3
+TECNICA
+•
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi)/Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+Se comparó el inventario con los dispositivos encontrados en campo.
+•
+Se documentaron inconsistencias, equipos obsoletos o sin registro formal.
+UNIVERSIDAD TECNICA DE
+Resultados:
+•
+•
+•
+El inventario incluyó estaciones de trabajo para modelado 3D, servidores, impresoras y
+routers.
+Se detectaron ciertos equipos sin registro actualizado, lo que indica la necesidad de mejorar
+la trazabilidad.
+Se recomienda consolidar un sistema de gestión de inventario digital con etiquetas por
+número de serie y ubicación.
+3.2 MANTENIMIENTO PREVENTIVO
+Objetivo: Evaluar la existencia y calidad del programa de mantenimiento preventivo para los
+equipos tecnológicos.
+Procedimiento:
+•
+•
+Se revisaron registros de mantenimiento realizados durante el último año.
+Se verificaron actividades como limpieza física, actualizaciones de software y reemplazo
+de componentes.
+Se entrevistó al personal de TI para conocer los protocolos utilizados.
+Resultados:
+•
+Existe un plan de mantenimiento preventivo vigente, con registros de actividades
+realizadas.
+Se realiza mantenimiento periódico, pero se identificó la falta de documentación detallada
+sobre procedimientos de actualización de software especializado (AutoCAD, Revit).
+Se recomienda estandarizar y documentar los procesos de mantenimiento, así como
+establecer mecanismos de seguimiento automático para futuras revisiones.
+4
+RSIDAD 1
+TECNICA
+A DE AMB
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi) / Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+3.3 TABLA DE RESULTADOS
+Codigo Fecha/Hora Fecha/Hora Responsable Evidencia
+Inicio
+Fin
+A01
+28/05/2025 28/05/2025
+Ariel
+Tonato
+8:35
+8:40
+A02
+28/05/2025 28/05/2025
+John Peña
+8:45
+8:55
+UDAD
+VERSIDA
+LAMBATO
+Observaciones
+Calificacion
+Departamento de
+Ingeniería y
+Construcción
+Roberto Pillajo
+Dirección General
+Santiago Freire
+Director General
+Departamento de
+Arquitectura
+y Diseño
+Lizbeth López
+Departamento de
+Tecnología de la infor-
+mación (TI)
+Encargado de TI
+Designar formalmente responsables de TI mejora la
+trazabilidad. Actualizar el organigrama con
+funciones de TI, inventariar sistemas de diseño con
+responsables y documentar una política de accesos y
+privilegios garantiza control y seguridad informática.
+Aprobado con
+observaciones
+1 Ingeniero de
+apoyo
+1 Arquitecto o
+diseñador de apoyo
+KREA SF STUDIO
+Organigrama
+Administrador/a
+y Asistente
+Se evidenció el cumplimiento de los requerimientos,
+con un inventario completo de equipos de cómputo,
+identificación clara de estaciones de trabajo para
+diseño y modelado 3D, y especificaciones técnicas
+detalladas del hardware especializado utilizado.
+Aprobado
+VERSIDA
+1
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO ECUADOR
+A03
+28/05/2025 28/05/2025
+Kevin
+Ganan
+A04
+28/05/2025 28/05/2025 William
+Perez
+A05
+28/05/2025 28/05/2025
+Fernando
+Sanchez
+VERSIDA
+AD TECNICA
+AMBATO
+Se realizó la inspección física de las estaciones de
+trabajo y la revisión de periféricos especializados; sin
+embargo, no fue posible ejecutar las pruebas de
+rendimiento debido a la falla del equipo prestado para
+tal fin, lo que limitó la elaboración completa del
+informe técnico con observaciones detalladas.
+Aprobada con
+observaciones
+Se verificó que los servidores y equipos de
+almacenamiento se encuentran en una ubicación
+segura con acceso restringido, y que cuentan con
+medidas de protección física adecuadas como racks,
+UPS y ventilación. Sin embargo, no se cuenta con un
+registro formal de accesos físicos ni control
+documentado de ingresos al área.
+Aprobada con
+observaciones
+Se cuenta con un plan de mantenimiento vigente y se
+realizó la verificación de compatibilidad entre
+versiones de software y hardware. No obstante, no se
+dispone de procedimientos documentados para la
+gestión de actualizaciones del software de diseño, lo
+que limita la estandarización y trazabilidad del
+proceso.
+Aprobada con
+observaciones
+VERSIDA
+1
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO ECUADOR
+A06
+28/05/2025 28/05/2025
+Ariel
+Tonato
+A07
+28/05/2025 28/05/2025 John Peña
+VERSIDA
+DAD TECNICA
+AMBATO
+Se cumplió con la inspección del cableado de red,
+verificando su adecuación para alta velocidad, así
+como con la evaluación de riesgos de pérdida de
+datos y la implementación de medidas preventivas
+apropiadas.
+Aprobada
+Se constató el correcto funcionamiento de sistemas
+de vigilancia y monitoreo en áreas críticas, con
+cobertura adecuada de cámaras en zonas de
+almacenamiento de equipos y archivos sensibles.
+Además, se verificó la existencia y mantenimiento de
+respaldo energético mediante UPS y generadores
+para estaciones de trabajo y servidores.
+Aprobada
+A08
+VERSIDA
+1
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi) / Casilla 334 / Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO ECUADOR
+28/05/2025 28/05/2025
+William
+Perez
+VERSIDA
+DAD TECNICA
+AMBATO
+Se cumplió con la existencia de procedimientos
+documentados para la adquisición de equipos
+especializados, planes de recuperación para
+proyectos arquitectónicos críticos, evaluación del
+ciclo de vida de los equipos y políticas establecidas
+para respaldo y recuperación, incluyendo frecuencia,
+almacenamiento y pruebas.
+Aprobada
+4.
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi)/Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+AUDITOR LIDER
+Ariel Tonato - Ing. Software
+5.
+6.
+EQUIPO DE AUDITORIA
+-
+John Peña Ing. Software
+Fernando Sanchez - Ing. Software
+William Perez - Ing. Software
+Kevin Ganan - Ing. Software
+METODOLOGÍA DE AUDITORIA DE DESARROLLO
+La auditoría realizada en KREA SF STUDIO tuvo como objetivo evaluar la gestión y control del área
+de Tecnologías de la Información, en el contexto de una auditoría de desarrollo de software adaptada a
+la realidad de la empresa, que no cuenta con actividades propias de desarrollo sino con un equipo de TI
+enfocado en soporte, administración de redes y sistemas, y mantenimiento tecnológico.
+Durante el proceso, se verificó el cumplimiento de normativas legales vigentes en Ecuador relacionadas
+con la seguridad de la información, protección de datos personales, propiedad intelectual, comercio
+electrónico y defensa del consumidor. Asimismo, se evaluaron las buenas prácticas en la gestión
+tecnológica, incluyendo control de accesos, mantenimiento de equipos, uso de software con licencias
+válidas, respaldo de datos y capacitación en seguridad digital.
+Entre los principales hallazgos, se destaca la existencia de un organigrama actualizado, inventarios
+completos de hardware y estaciones de trabajo especializadas, y sistemas de vigilancia y respaldo
+energético adecuados. Sin embargo, se identificaron áreas de mejora, como la ausencia de designaciones
+formales para el personal de TI, falta de políticas documentadas sobre accesos y privilegios, carencia
+de procedimientos escritos para actualizaciones de software, y la inexistencia de registros formales de
+control de accesos físicos.
+Además, no se pudieron realizar pruebas de rendimiento por limitaciones técnicas, lo que restringió la
+evaluación completa del desempeño de los equipos en proyectos complejos.
+Se recomienda fortalecer la documentación y formalización de procesos, establecer políticas claras de
+seguridad y accesos, y mejorar el registro y control de los recursos tecnológicos, para aumentar la
+eficiencia y seguridad del área de TI en apoyo a las operaciones de la empresa.
+9
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi)/Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+7.
+METODOLOGÍA
+8.
+La auditoría se realizó mediante inspecciones físicas de los equipos y áreas de TI, revisión documental
+de políticas, procedimientos y registros, así como entrevistas con el personal responsable del área. Se
+aplicó un enfoque sistemático para validar la existencia y estado del inventario de hardware, evaluar la
+gestión de accesos y privilegios, y verificar la implementación de buenas prácticas en mantenimiento,
+seguridad y respaldo de datos.
+ALCANCE
+La auditoría física cubrió los siguientes aspectos y áreas dentro de KREA SF STUDIO:
+1. Inventario:
+Se verificaron las cantidades y tipos de bienes informáticos, contrastando el inventario
+físico con los registros documentados. Además, se revisó la documentación de entradas y
+salidas para conocer el proceso de adquisición y se evaluó la antigüedad de los equipos para
+identificar posibles bienes obsoletos o en malas condiciones.
+2. Procesos:
+Se inspeccionaron las áreas relacionadas con TI para constatar la existencia y aplicación de
+normas y estándares. Se revisó la documentación de los procesos de TI para asegurar que
+estén correctamente clasificados y alineados con sus áreas de responsabilidad.
+3. Verificación de la ubicación:
+Se evaluó la disposición física de las instalaciones donde se encuentran los activos de TI,
+con énfasis en la seguridad y protección ante posibles desastres naturales u otros riesgos.
+4. Seguridad:
+Se revisaron los sistemas de vigilancia y control de acceso para asegurar que existan
+medidas adecuadas para la protección de los activos tecnológicos.
+10
+10
+TECNICA
+UNIVERSIDAD TÉCNICA DE AMBATO
+FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+CARRERA DE TECNOLOGÍAS DE LA INFORMACIÓN
+Cdla. Universitaria (Predios Huachi)/Casilla 334/Telefax: 03-2851894-2411537, Correo Electrónico: carrera.sistemas@uta.edu.ec
+AMBATO-ECUADOR
+9.
+FIRMAS DE RESPONSABILIDAD
+Firma Responsable 1: John Peña
+Firma Responsable 2: Fernando Sánchez
+Firma Responsable 3: Kevin Ganan
+Firma Responsable 4: William Pérez
+Firma Responsable 5: Ariel Tonato
+11

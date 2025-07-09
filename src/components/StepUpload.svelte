@@ -12,21 +12,30 @@
         accepted: [],
         rejected: [],
     };
+    let errorMsg = "";
+    const MAX_SIZE_MB = 3;
 
     async function handleFilesSelect(e) {
         const { acceptedFiles, fileRejections } = e.detail;
+        errorMsg = "";
 
-        files.accepted = [...files.accepted, ...acceptedFiles];
-        files.rejected = [...files.rejected, ...fileRejections];
+        // Validar tamaño antes de aceptar
+        const validFiles = acceptedFiles.filter(f => f.size <= MAX_SIZE_MB * 1024 * 1024);
+        const tooBig = acceptedFiles.filter(f => f.size > MAX_SIZE_MB * 1024 * 1024);
+        if (tooBig.length > 0) {
+            errorMsg = `El archivo '${tooBig[0].name}' supera el límite de ${MAX_SIZE_MB}MB.`;
+        }
+        files.accepted = [...files.accepted, ...validFiles];
+        files.rejected = [...files.rejected, ...fileRejections, ...tooBig];
         
-        if (acceptedFiles.length > 0) {
+        if (validFiles.length > 0) {
             setAppStatusLoading();
             
             try {
                 const formData = new FormData();
-                formData.append("file", acceptedFiles[0]);
+                formData.append("file", validFiles[0]);
 
-                console.log('Uploading file:', acceptedFiles[0].name);
+                console.log('Uploading file:', validFiles[0].name);
                 const response = await fetch("/api/upload", {
                     method: "POST",
                     body: formData,
@@ -66,6 +75,9 @@
             </div>
         </Dropzone>
     </div>
+    {#if errorMsg}
+        <div class="mt-4 text-center text-red-400 font-medium">{errorMsg}</div>
+    {/if}
 {:else}
     <div class="flex justify-center">
         <div class="bg-green-900/20 border border-green-500/30 rounded-lg p-4 max-w-md">

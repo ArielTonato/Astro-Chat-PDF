@@ -1,0 +1,60 @@
+Ariel Tonato
+Ambato, Ecuador | alexarieltonato@hotmail.com | +593988850126 | https://github.com/ArielTonato
+https://www.linkedin.com/in/ariel-tonato/
+Formación
+Ingeniero de Software, Universidad Técnica de Ambato
+Habilidades y Aptitudes
+Trabajo en equipo
+• Resolución de problemas
+• Resiliencia
+•
+Adaptabilidad
+• Comunicación efectiva
+• Pensamiento crítico
+Cursos y Certificados
+2021-2025
+CURSO CSS - Flexbox, CSS Grid, SASS, CodeTeca (37 horas)
+2022
+Desarrollo de Aplicaciones Web con React, Universidad Técnica de Ambato (40
+horas)
+2022
+Congreso CSEI 2023, Universidad Técnica de Ambato (50 horas)
+2023
+Desarrollo de Aplicaciones Web con Angular, Universidad Politecnica de
+Chimborazo (40 horas)
+2023
+Desarrollo de Aplicaciones Moviles con Flutter, Universidad Politecnica de
+Chimborazo (35 horas)
+2024
+Congreso CSEI 2024, Universidad Técnica de Ambato (50 horas)
+Habilidades Destacadas
+• Desarrollo Ágil: Conocimiento de metodologías ágiles, especialmente Scrum, aplicando principios ágiles en
+proyectos universitarios.
+• Diseño de Software: Capacidad para diseñar arquitecturas de software escalables y mantenibles, aplicando
+patrones de diseño y principios de ingeniería de software.
+2024
+• UX/UI: Enfoque centrado en el usuario para diseñar interfaces intuitivas y atractivas, aplicando buenas prácticas
+de usabilidad y accesibilidad.
+• Integración de IA: Experiencia incorporando soluciones de inteligencia artificial en aplicaciones web y móviles,
+mejorando funcionalidades como recomendaciones, automatización y análisis de datos.
+Proyectos Destacados
+Aplicaciones Móviles con React Native
+github.com/ArielTonato
+• Una aplicación móvil construida con Expo y React Native que conecta a dueños de mascotas con posibles
+adoptantes. Esta plataforma proporciona una experiencia fluida para que los usuarios puedan explorar, publicar
+y adoptar mascotas, facilitando la comunicación entre las partes.
+• Herramientas utilizadas: React Native, Expo.
+Desarrollo Web Con React
+github.com/ArielTonato
+• Sistema web diseñado para la gestión integral de cobros de agua potable para la Junta de Agua de Santa Rosa.
+La aplicación permite administrar clientes, facturas, mediciones de consumo, sucursales y usuarios del sistema,
+ofreciendo una solución completa para la administración del servicio de agua potable. Proyecto
+• Herramientas utilizadas: React, React Router.
+Desarrollo de API'S Robustas con NEST
+github.com/ArielTonato
+• Sistema de reserva de pasajes de bus desarrollado con NestJS. El sistema permite a los usuarios realizar reservas
+de asientos y gestionar pagos para una cooperativa de transporte específica.
+• Herramientas utilizadas: NestJS.
+Tecnologías
+Lenguajes: JavaScript, Dart, Java, SQL
+Tecnologías: Flutter, NodeJS, Angular, React, Git, GitHub, Firebase, Spring, Nest
