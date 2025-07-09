@@ -1,5 +1,5 @@
 <script>
-    import { Input, Label, Spinner } from "flowbite-svelte";
+    import { Label, Spinner } from "flowbite-svelte";
     import { appStatusInfo, setAppStatusError } from "../store";
     const { url, pages, id } = $appStatusInfo;
 
@@ -38,7 +38,7 @@
             if (!res.ok) {
                 const errorData = await res.json();
                 console.error("Error al enviar la pregunta:", errorData.error);
-                answer = `Error: ${errorData.error || 'Error desconocido'}`;
+                answer = `Error: ${errorData.error || "Error desconocido"}`;
                 return;
             }
 
@@ -53,32 +53,68 @@
     };
 </script>
 
-<div class="grid grid-cols-4 gap-2">
-    {#each images as image}
-        <img
-            src={image}
-            alt="PDF Page"
-            class="rounded w-full h-auto aspect-[400/500]"
-        />
-    {/each}
+<div class="space-y-8">
+    <!-- PDF Preview -->
+    <div class="bg-gray-900/30 backdrop-blur-sm rounded-lg p-6">
+        <h3 class="text-lg font-medium text-white mb-4">
+            Vista previa del PDF
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {#each images as image, index}
+                <div class="relative group">
+                    <img
+                        src={image}
+                        alt="PDF Page {index + 1}"
+                        class="rounded-lg w-full h-auto aspect-[400/500] object-cover shadow-lg group-hover:scale-105 transition-transform"
+                    />
+                    <div
+                        class="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded"
+                    >
+                        Página {index + 1}
+                    </div>
+                </div>
+            {/each}
+        </div>
+    </div>
+
+    <!-- Chat Form -->
+    <div class="bg-gray-900/30 backdrop-blur-sm rounded-lg p-6">
+        <form on:submit={handleSubmit} class="space-y-4">
+            <div>
+                <Label for="question" class="block mb-2 text-white font-medium">
+                    ¿Qué quieres saber sobre este documento?
+                </Label>
+                <input
+                    id="question"
+                    name="question"
+                    required
+                    placeholder="Ej: ¿De qué trata este documento? ¿Cuáles son los puntos principales?"
+                    class="w-full px-4 py-2 rounded-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    autocomplete="off"
+                />
+            </div>
+            <button
+                type="submit"
+                disabled={loading}
+                class="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
+            >
+                {#if loading}
+                    <Spinner class="w-5 h-5 text-white" />
+                    <span>Procesando...</span>
+                {:else}
+                    <span>Enviar Pregunta</span>
+                {/if}
+            </button>
+        </form>
+    </div>
+
+    <!-- Answer -->
+    {#if answer}
+        <div class="bg-gray-900/30 backdrop-blur-sm rounded-lg p-6">
+            <h3 class="text-xl font-bold text-white mb-4">Respuesta</h3>
+            <div class="prose prose-invert max-w-none">
+                <p class="text-gray-200 leading-relaxed">{answer}</p>
+            </div>
+        </div>
+    {/if}
 </div>
-
-<form class="mt-8" on:submit={handleSubmit}>
-    <Label for="question" class="block mb-2">Deja aqui tu pregunta</Label>
-    <Input id="question" required placeholder="¿De que trata este documento?"
-    ></Input>
-</form>
-
-{#if loading}
-    <div class="flex justify-center items-center flex-col gap-y-2">
-        <Spinner class="w-8 h-8"></Spinner>
-        <p>Esperando Respuesta</p>
-    </div>
-{/if}
-
-{#if answer}
-    <div class="mt-8">
-        <p class="text-xl font-bold">Respuesta</p>
-        <p>{answer}</p>
-    </div>
-{/if}

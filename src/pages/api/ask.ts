@@ -4,7 +4,7 @@ import { OpenAI } from 'openai'
 import path from 'path'
 
 const openai = new OpenAI({
-    apiKey: import.meta.env.OPENAI_API_KEY || "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",
+    apiKey: import.meta.env.OPENAI_API_KEY,
 })
 
 export const POST: APIRoute = async ({ request }) => {

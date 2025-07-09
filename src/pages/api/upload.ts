@@ -5,9 +5,9 @@ import path from "path"
 import { v2 as cloudinary, type UploadApiResponse } from 'cloudinary';
 
 cloudinary.config({
-  cloud_name: import.meta.env.CLOUDINARY_CLOUD_NAME || 'aridev21',
-  api_key: import.meta.env.CLOUDINARY_API_KEY || '742142531115995',
-  api_secret: import.meta.env.CLOUDINARY_API_SECRET || 'PecFIWp7rydwvkUQoYpsFe2x0Yg'
+  cloud_name: import.meta.env.CLOUDINARY_CLOUD_NAME,
+  api_key: import.meta.env.CLOUDINARY_API_KEY,
+  api_secret: import.meta.env.CLOUDINARY_API_SECRET
 });
 
 const outputDir = path.join(process.cwd(), "public/text");
